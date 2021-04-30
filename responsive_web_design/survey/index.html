@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<link rel = "stylesheet" href = "style.css"> 
+<html id = "main">
+    <title>Survey</title>
+    <body>
+        <h1 id = "title">Survey</h1>
+        <p id = "description">Complete this survey for free Jamba Juice</p>
+        <form id = "survey-form">
+            <label for="name" id = "name-label">Enter your name</label>
+            <input type = "text" id = "name" placeholder="John Doe" required>
+            <br>
+            <label for="email" id = "email-label">Enter your email</label>
+            <input type = "email" id = "email" placeholder="example@email.com" required>
+            <br>
+            <label for="male" id = "number-label">What is your age?</label>
+            <input type = "number" id = "number" min = "0" max = "120" placeholder="0-120">
+            <br>
+            <label for="dropdown" id = "number-label">What is your favorite fruit?</label>
+            <select name="order" id="dropdown">
+                <option value="apple">Apple</option>
+                <option value="orange">Orange</option>
+                <option value="peach">Peach</option>
+                <option value="grapes">Grape</option>
+                <option value="pineapple">Pineapple</option>
+            </select>
+            <br>
+            <label for="sweet"><input id="sweet" type="radio" name="sweet"> Sweet</label>
+            <label for="sour"><input id="sour" type="radio" name="sour"> Sour</label>
+            <br>
+            <textarea></textarea>
+            <br>
+            <label for="coupons"><input id="coupons" type="checkbox" name="coupons"> Send Coupons?</label>
+            <br>
+            <label for="emailList"><input id="emailList" type="checkbox" name="emailList"> Subscribe</label>
+            <br>
+            <button id = "submit">Submit</button>
+        </form>
+    </body>
+</html>
