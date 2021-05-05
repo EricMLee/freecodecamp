@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eric Lee - Portfolio</title>
+        <link rel = "stylesheet" href = "style.css"> 
+    </head>
+    <body>
+        <nav id = "navbar">
+            <ul class = "topnav" id="hamburgerClick">
+                <li class = "topnav-left"><a href = "#welcome-section">ERIC LEE</a></li> 
+                <li class = "hamburger"><a href = "javascipt:void(0);" onclick = "dropDownMenu();"> &#9776;</a></li>
+                <li class = "norm"><a href = "#projects">Projects</a></li>
+                <li class = "norm"><a href = "#about">About</a></li>
+                <li class = "norm"><a href = "#projects">Projects</a></li>
+            </ul>
+        </nav>
+        <div id = "welcome-section">
+            <div class = "container" id = "section-1-gradient">
+                <div class ="row">
+                    <div class = "col-6">
+                        <div class = "leftSide-col">
+                            <br><br><br><br><br><br><br><br><br>
+                            <h1 class = "large">
+                                Eric Lee
+                            </h1>
+                            <h1 class = "large">
+                                Software Engineer
+                                <br><br><br><br>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <header>
+            <h1 class = "section2Header">Projects</h1>
+        </header>
+        <div class="container" id = "projects">
+            <div class="row">
+                <div class = "col-6">
+                    <div class ="box project-tile">
+                        <div class ="icon">
+                            <img src = "Sorting.PNG" width = "65%" height = "75%">
+                        </div>
+                        <label>
+                           Sorting Visualization
+                        </label>
+                        <p>
+                            Sorting visualization website that will show many different sorts 
+                            being done to help people who are trying to learn sorting algorithms. 
+                        </p>
+                    </div>
+                </div>
+                <div class = "col-6">
+                    <div class ="box">
+                        <div class ="icon">
+                            <img src = "Sorting.PNG" width = "65%" height = "75%">
+                        </div>
+                        <label>
+                           Sorting Visualization
+                        </label>
+                        <a href = "https://ericmlee.github.io/sorting">Project</a>
+                        <p>
+                            Sorting visualization website that will show many different sorts 
+                            being done to help people who are trying to learn sorting algorithms. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+
+        <header>
+            <h1 class = "section3Header">Where I've been</h1>
+        </header>
+        <div class="container" id = "about">
+            <div class="row">
+                <div class = "col-4">
+                    <div class ="box">
+                        <div class ="icon">
+                            <img src = "sammy.jpg" width = "55%" height = "55%">
+                        </div>
+                        <label>
+                           University of California, Santa Cruz
+                        </label>
+                        <p>
+                            I am currently a student at UCSC working towards 
+                            getting a Bachelor's in Computer Science. I am expected
+                            to graduate by June of 2021. 
+                        </p>
+                    </div>
+                </div>
+                <div class = "col-4">
+                    <div class ="box">
+                        <div class ="icon">
+                            <img src = "wvm.jpg" width = "70%" height = "70%">
+                        </div>
+                        <label>
+                           West Valley College
+                        </label>
+                        <p>
+                            Attended West Valley College from September 2015 to May 2019. Worked
+                            on getting Associate's for Physics, Math and Computer Science.
+                        </p>
+                    </div>
+                </div>
+                <div class = "col-4">
+                    <div class ="box">
+                        <div class ="icon">
+                            <img src = "CHS.jpg" width = "89%" height = "89%">
+                        </div>
+                        <label>
+                           Cupertino High School
+                        </label>
+                        <p>
+                            Graduated Cupertino High School, class of 2015.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <ul>
+                <li>San Jose, California</li>
+                <li>©2020 by Eric Lee</li>
+                <li><a href = "https://github.com/EricMLee" id = "profile-link" target = "_blank">Github</a></li>
+            </ul>
+        </footer>
+        <script>
+            function dropDownMenu(){
+                var x = document.getElementById("hamburgerClick");
+                if(x.className === "topnav"){
+                    x.className += " responsive";
+                    /*change topnav to topnav.responsive*/
+                }else{
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+    </body>
+</html>
+
+<!-- 
+
+User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
+
+User Story #5: The projects section should contain at least one link to a project.
+
+User Story #6: My portfolio should have a navbar with an id of navbar.
+
+User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
+
+User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
+
+User Story #9: My portfolio should have at least one media query.
+
+User Story #10: The height of the welcome section should be equal to the height of the viewport.
+
+User Story #11: The navbar should always be at the top of the viewport. 
+
+-->

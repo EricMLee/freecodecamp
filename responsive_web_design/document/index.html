@@ -1,0 +1,88 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!DOCTYPE html>
+<link rel = "stylesheet" href = "style.css"> 
+<html>
+    <nav id = "navbar">
+        <a><header>Python</header></a>
+        <ul>
+            <li><a href = "#start" class = "nav-link">Start</a></li>
+            <li><a href = "#variables" class = "nav-link">Variables</a></li>
+            <li><a href = "#functions" class = "nav-link">Functions</a></li>
+            <li><a href = "#loops" class = "nav-link">Loops</a></li>
+            <li><a href = "#recursion" class = "nav-link">Recursion</a></li>
+        </ul>
+    </nav>
+    <main id = "main-doc">
+        <section class = "main-section" id = "start">
+            <header>Start</header>
+            <code>print("Hello World")</code>
+            <p>Printing can be done by using the <code>print()</code> function. Printing "Hello World" is the start of every programmer's journey.</p>
+        </section>
+        <section class = "main-section" id = "variables">
+            <header>Variables</header>
+            <p>Here is a list of some of the many variable types in python</p>
+            <ul>
+                <li>str</li>
+                <li>int</li>
+                <li>float</li>
+                <li>bool</li>
+                <li>list</li>
+            </ul>
+            <p>To set a variable to a value: 
+                <code>myNum = 5</code>
+                Will initialize and set myNum to 5.
+                <code>print(myNum + 2)</code> will print 7
+            </p>
+            <p>
+                <code>myNum = str(5)</code>
+                Will give you "5"
+            </p>
+            <p>You can use <code>typeof</code> get the type of the varibles</p>
+        </section>
+        <section class = "main-section" id = "functions">
+            <header>Functions</header>
+            <p>
+                <code>
+                    def myFunc():
+                        print("Hello")
+                </code>
+                Is how you would create a function
+            </p>
+        </section>
+        <section class = "main-section" id = "loops">
+            <header>Loops</header>
+            <p>
+                <code>for i in myList</code>
+                Will iterate through every item in myList
+            </p>
+            <p>
+                <code>while i > 0:</code>
+                Will loop while <code>i</code> is greater than 0
+            </p>
+
+        </section>
+        <section class = "main-section" id = "recursion">
+            <header>Recursion</header>
+            <p>
+                Recursion can be done by calling the function within the function
+            </p>
+            <p>
+                Make sure you don't run into an infinite loop
+            </p>
+        </section>
+    </main>
+</html>
+
+<!-- 
+
+User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java").
+
+User Story #5: The .main-section elements should contain at least 10 p elements total (not each).
+
+User Story #6: The .main-section elements should contain at least 5 code elements total (not each).
+
+User Story #7: The .main-section elements should contain at least 5 li items total (not each).
+
+User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+
+User Story #15: My Technical Documentation page should use at least one media query. -->
